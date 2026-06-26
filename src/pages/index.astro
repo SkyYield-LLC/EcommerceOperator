@@ -1,66 +1,153 @@
 ---
 import Base from '../layouts/Base.astro';
-import TrustBar from '../components/TrustBar.astro';
 import NewsletterSignup from '../components/NewsletterSignup.astro';
 import { site } from '../config/site';
+
+const featuredQueries = [
+  {
+    no: '01',
+    tag: 'Platform',
+    title: 'Shopify 2026 — Operator Review',
+    excerpt: 'Our team has run Shopify across DTC catalogs from $1M to $50M GMV. The platform earns its take rate — but the limits show in specific places that are worth knowing in advance.',
+    href: '/reviews/shopify-review-2026',
+    readTime: '13 min',
+  },
+  {
+    no: '02',
+    tag: 'Lifecycle',
+    title: 'Klaviyo — What Scales, What Doesn\'t',
+    excerpt: 'Klaviyo is still the default ESP for ecommerce. The segmentation engine carries the value; the SMS pricing and AI feature creep are where operators need to push back.',
+    href: '/reviews/klaviyo-review-2026',
+    readTime: '11 min',
+  },
+  {
+    no: '03',
+    tag: 'Guide',
+    title: 'The Ecommerce Tech Stack',
+    excerpt: 'Seven categories — platform, ESP, SMS, reviews, subscriptions, analytics, helpdesk — and the specific platforms our team specifies for DTC brands above $10M GMV.',
+    href: '/guides/best-ecommerce-tech-stack-2026',
+    readTime: '14 min',
+  },
+];
+
+const schema = [
+  {
+    no: '01',
+    title: 'Operator perspective',
+    body: 'Every query is run by a team that has actually deployed the platform across SKUs, channels, and customer files — not by reviewers reading vendor pricing pages.',
+  },
+  {
+    no: '02',
+    title: 'GMV-aware tests',
+    body: 'Tools that work at $500k GMV collapse at $50M. We measure where each platform breaks — and which adjacent system has to absorb the load.',
+  },
+  {
+    no: '03',
+    title: 'Transparent unit economics',
+    body: 'Take rate, per-event cost, list-overage tiers, third-party app fees — surfaced explicitly so the contract stops being a surprise at renewal.',
+  },
+];
 ---
 <Base title={site.name} description={site.description}>
 
-  <!-- HERO -->
+  <!-- HERO — terminal cover -->
   <section class="hero">
     <div class="hero-grid-overlay"></div>
     <div class="hero-inner container">
       <div class="hero-content">
-        <div class="hero-badge">
-          <span>⚡</span>
-          Built by operators, for operators
+        <div class="hero-badge" style="font-family:'IBM Plex Sans',sans-serif; font-weight:600; letter-spacing:0.18em; text-transform:uppercase; font-size:0.72rem;">
+          &gt; Tested by ecommerce operators
         </div>
-        <h1>Software reviews for <em>{site.niche}</em></h1>
+        <h1 style="font-family:'IBM Plex Sans',sans-serif;">The data layer of software <em>that runs the store</em></h1>
         <p class="hero-sub">
-          Independent reviews and real-world comparisons. Editorially independent.
-          Just what actually works at scale.
+          Independent reviews of platform, lifecycle, retention, and analytics tools — written
+          by operators who manage the SKUs, the customer file, and the unit economics.
         </p>
         <div class="hero-actions">
-          <a href="/start-here" class="btn btn-teal btn-lg">Start Here →</a>
-          <a href="/reviews" class="btn btn-outline btn-lg" style="color:#FFFFFF; border-color:rgba(255,255,255,.6); background:rgba(255,255,255,.08);">All Reviews</a>
+          <a href="/reviews" class="btn btn-teal btn-lg">Run the Queries →</a>
+          <a href="/guides/best-ecommerce-tech-stack-2026" class="btn btn-outline btn-lg" style="color:#FFFFFF; border-color:rgba(255,255,255,.6); background:rgba(255,255,255,.08);">The Tech Stack</a>
+        </div>
+      </div>
+
+      <div class="hero-stat-card">
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-number">8<em>+</em></span>
+            <span class="stat-label">Platforms queried</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number">DTC</span>
+            <span class="stat-label">Operator focus</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number">Independent</span>
+            <span class="stat-label">Editorial standard</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number">2026</span>
+            <span class="stat-label">Release edition</span>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- TRUST BAR -->
-  <section class="container" style="padding:clamp(1.5rem,4vw,2rem) clamp(1rem,4vw,1.5rem) 0;">
-    <TrustBar items={[
-      { number: 'Thousands+', label: 'Tools evaluated' },
-      { number: 'Independent', label: 'Editorial standard' },
-      { number: '2026', label: 'Latest update' },
-    ]} />
-  </section>
-
-  <!-- WHY -->
+  <!-- FEATURED QUERIES -->
   <section class="section">
     <div class="container">
       <div class="section-head">
-        <p class="section-label">Why {site.name}</p>
-        <h2 class="section-title">Advice that holds up in the real world</h2>
+        <p class="section-label">Featured Queries</p>
+        <h2 class="section-title">This release's selected returns</h2>
+        <p class="section-sub" style="font-family:'IBM Plex Sans',sans-serif; font-weight:500; letter-spacing:0.04em; opacity:0.78; max-width:42rem; margin-top:0.75rem;">
+          Three platforms reviewed in depth — tested against the operational realities of mid-stage and growth-stage DTC.
+        </p>
+      </div>
+
+      <div class="card-grid">
+        {featuredQueries.map(q => (
+          <a href={q.href} class="post-card">
+            <div class="post-card-body">
+              <div style="display:flex; align-items:baseline; gap:0.85rem; margin-bottom:0.6rem;">
+                <span style="font-family:'IBM Plex Sans',sans-serif; font-weight:600; color:#00BFA5; font-size:0.78rem; letter-spacing:0.22em; text-transform:uppercase;">&gt; query/{q.no}</span>
+                <span class="post-card-tag">{q.tag}</span>
+              </div>
+              <h3 style="font-family:'IBM Plex Sans',sans-serif;">{q.title}</h3>
+              <p>{q.excerpt}</p>
+              <div class="post-card-meta">
+                <span style="letter-spacing:0.08em; text-transform:uppercase;">Reading</span>
+                <span>·</span>
+                <span>{q.readTime}</span>
+              </div>
+            </div>
+          </a>
+        ))}
+      </div>
+
+      <div style="text-align:center; margin-top:2.5rem;">
+        <a href="/reviews" class="btn btn-outline">Open the Full Index →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCHEMA -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-head">
+        <p class="section-label">Schema</p>
+        <h2 class="section-title">How {site.name} is written</h2>
       </div>
 
       <div class="feature-grid">
-        <div class="feature-item">
-          <div class="feature-icon feature-icon-teal">🏢</div>
-          <h3>Operator perspective</h3>
-          <p>Every recommendation comes from a team that has actually deployed the tool — not a blogger reviewing a free trial.</p>
-        </div>
-        <div class="feature-item">
-          <div class="feature-icon feature-icon-navy">⚡</div>
-          <h3>Specific to your niche</h3>
-          <p>Generic software advice doesn't translate. The {site.name} team focuses on how tools handle the realities of {site.niche}.</p>
-        </div>
-        <div class="feature-item">
-          <div class="feature-icon feature-icon-orange">💰</div>
-          <h3>Full cost transparency</h3>
-          <p>We list exact prices, what gets expensive at scale, and the hidden costs most reviewers skip.</p>
-        </div>
+        {schema.map(s => (
+          <div class="feature-item">
+            <div style="font-family:'IBM Plex Sans',sans-serif; font-weight:600; color:#00BFA5; font-size:0.85rem; letter-spacing:0.22em; margin-bottom:0.6rem; text-transform:uppercase;">&gt; schema/{s.no}</div>
+            <h3 style="font-family:'IBM Plex Sans',sans-serif;">{s.title}</h3>
+            <p>{s.body}</p>
+          </div>
+        ))}
       </div>
     </div>
   </section>
@@ -69,8 +156,8 @@ import { site } from '../config/site';
   <section class="container" style="padding:clamp(1.5rem,4vw,2rem) clamp(1rem,4vw,1.5rem) clamp(2.5rem,6vw,4rem);">
     <NewsletterSignup
       variant="hero"
-      title={`Get the ${site.name} newsletter`}
-      description="One email a week with the best new reviews and tools we've tested. No spam."
+      title={`The ${site.name} release notes`}
+      description="One weekly release — new queries, new schema, what shipped to the catalog this week. No spam."
       ctaLabel="Subscribe"
     />
   </section>
