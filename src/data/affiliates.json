@@ -6,7 +6,10 @@
     "commission": "20% recurring",
     "network": "impact",
     "status": "active",
-    "category": "Email Marketing"
+    "category": "Email Marketing",
+    "externalProgramId": "21260",
+    "applicationStatus": "approved",
+    "approvedAt": "2026-06-30T18:12:19.724Z"
   },
   {
     "slug": "invideo",
@@ -15,7 +18,10 @@
     "commission": "Impact affiliate",
     "network": "impact",
     "status": "active",
-    "category": "Video & Content"
+    "category": "Video & Content",
+    "externalProgramId": "12258",
+    "applicationStatus": "approved",
+    "approvedAt": "2026-06-30T18:12:19.724Z"
   },
   {
     "slug": "retouch4me",
@@ -24,7 +30,10 @@
     "commission": "Impact affiliate",
     "network": "impact",
     "status": "active",
-    "category": "Photo & Design"
+    "category": "Photo & Design",
+    "externalProgramId": "39694",
+    "applicationStatus": "approved",
+    "approvedAt": "2026-06-30T18:12:19.724Z"
   },
   {
     "slug": "munch-studio",
@@ -33,7 +42,10 @@
     "commission": "Impact affiliate",
     "network": "impact",
     "status": "active",
-    "category": "Social Media"
+    "category": "Social Media",
+    "externalProgramId": "42530",
+    "applicationStatus": "approved",
+    "approvedAt": "2026-06-30T18:12:19.724Z"
   },
   {
     "slug": "sparrowdesk",
@@ -42,7 +54,10 @@
     "commission": "Impact affiliate",
     "network": "impact",
     "status": "active",
-    "category": "Support & Helpdesk"
+    "category": "Support & Helpdesk",
+    "externalProgramId": "48398",
+    "applicationStatus": "approved",
+    "approvedAt": "2026-06-30T18:12:19.724Z"
   },
   {
     "slug": "melio",
@@ -51,7 +66,10 @@
     "commission": "Impact affiliate",
     "network": "impact",
     "status": "active",
-    "category": "Payments & Billing"
+    "category": "Payments & Billing",
+    "externalProgramId": "25463",
+    "applicationStatus": "approved",
+    "approvedAt": "2026-06-30T18:12:19.724Z"
   },
   {
     "slug": "gohighlevel",
@@ -78,7 +96,10 @@
     "commission": "Impact affiliate",
     "network": "impact",
     "status": "active",
-    "category": "Customer Feedback"
+    "category": "Customer Feedback",
+    "externalProgramId": "48396",
+    "applicationStatus": "approved",
+    "approvedAt": "2026-06-30T18:12:19.724Z"
   },
   {
     "slug": "thrivesparrow",
@@ -120,7 +141,7 @@
     "slug": "moosend",
     "name": "Moosend",
     "url": "https://trymoo.moosend.com/68v8v144fh7a",
-    "commission": "30%\u201340% recurring",
+    "commission": "30%–40% recurring",
     "network": "direct",
     "status": "active",
     "category": "Email Marketing"
@@ -157,7 +178,7 @@
     "name": "Printify",
     "url": "https://try.printify.com/t9f3mafait11",
     "network": "direct",
-    "commission": "\u2014",
+    "commission": "—",
     "status": "active",
     "category": "print-on-demand",
     "notes": "Added 2026-06-16 via bulk affiliate import."
@@ -167,20 +188,26 @@
     "name": "RingPlanet",
     "url": "https://preferredlongdistance.pxf.io/yZj0Ay",
     "network": "impact",
-    "commission": "\u2014",
+    "commission": "—",
     "status": "active",
     "category": "voip-business-phone",
-    "notes": "Cross-pollinated 2026-06-16 \u2014 partner active elsewhere in portfolio."
+    "notes": "Cross-pollinated 2026-06-16 — partner active elsewhere in portfolio.",
+    "externalProgramId": "41090",
+    "applicationStatus": "approved",
+    "approvedAt": "2026-06-30T18:12:19.724Z"
   },
   {
     "slug": "duda",
     "name": "Duda",
     "url": "https://duda.sjv.io/vDQBkN",
     "network": "impact",
-    "commission": "\u2014",
+    "commission": "—",
     "status": "active",
     "category": "website-builder",
-    "notes": "Cross-pollinated 2026-06-16 \u2014 partner active elsewhere in portfolio."
+    "notes": "Cross-pollinated 2026-06-16 — partner active elsewhere in portfolio.",
+    "externalProgramId": "13628",
+    "applicationStatus": "approved",
+    "approvedAt": "2026-06-30T18:12:19.724Z"
   },
   {
     "slug": "munch",
@@ -189,7 +216,7 @@
     "commission": "Recurring Subscription",
     "network": "impact",
     "status": "active",
-    "category": "Social Media \u00b7 SMB",
+    "category": "Social Media · SMB",
     "externalProgramId": "42530",
     "applicationStatus": "approved",
     "approvedAt": "2026-06-29T20:00:00Z"
