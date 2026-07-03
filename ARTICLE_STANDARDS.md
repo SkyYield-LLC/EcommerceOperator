@@ -1,17 +1,32 @@
 # EcommerceOperator Article Standards
 Last updated: April 2026
 
-## Voice
-- Team perspective ONLY — author is always "EcommerceOperator Team"
+## Voice Signature
+
+**Editorial persona:** DTC and multichannel ecommerce operators
+
+**Who "we" are:** Our team operates and advises on ecommerce brands from post-launch DTC to $50M+ omnichannel. We've managed the P&L through the era of cheap Meta ads and through the era that came after.
+
+**Domain vocabulary — use these terms confidently:**
+CAC · LTV · AOV · nCAC · payback period · MER · SKU velocity · inventory turn · fulfillment SLA · reorder rate · post-purchase attach · attribution windows · MMM
+
+**Vocabulary to avoid:** Shopify-influencer language, "7-figure brand" talk, generic "growth hacker" vocabulary
+
+**Tone:** Data-driven, direct, moderately weary. We've built the dashboard and then argued with the dashboard.
+
+**Signature phrasing examples:**
+- **On-brand:** *"The attribution model here doesn't distinguish between a paid social conversion and a branded search click. Neither does anyone else's."*
+- **On-brand:** *"Our team ran this stack across four brands with different LTV curves. The reporting stops being useful north of $10M ARR."*
+- **On-brand:** *"A helpdesk that can't tie a customer conversation to their LTV segment is a helpdesk you use for tickets, not for revenue."*
+
+### Universal voice rules (apply to every article)
+
+- Team perspective ONLY — always "we", "our team", "our testing"
 - NEVER use first person singular ("I tested", "my experience", "I found")
-- Always "we", "our team", "our testing"
-- Credential: our team has reviewed thousands of software tools and managed thousands of locations across DTC brands, ecommerce operators, and online retail businesses
-- NEVER mention any parent company, founder, or individual team member names
-- NEVER mention being paid, earning commissions, or receiving referral payments in article body text
-- Use real numbers: actual costs, real deployment counts, specific tools
-- Be honest about cons even on tools we recommend
-- Short paragraphs — 2-3 sentences max
-- Never: "in conclusion", "in summary", "it's worth noting", "in today's fast-paced world"
+- Never mention SkyYield, Stosh, Nadim, or any parent company or individual
+- Avoid "in conclusion", "in summary", "it's worth noting", "without further ado"
+- Write like the persona above — the vocabulary is the tell, not the tone words
+
 
 ## Required Elements Checklist
 - [ ] Quick stats box (4 stats: rating, price, key metric, best for)
